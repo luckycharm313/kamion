@@ -187,3 +187,7 @@ input[type="radio"]:checked {
 .btn-outline-secondary i {
     color: #3172fb;
 }
+#map {
+    width: 100%;
+    height: 100%;
+}

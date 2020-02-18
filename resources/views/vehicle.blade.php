@@ -7,6 +7,7 @@
 <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js" ></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIFPhH6oRcSaJbVUxmzdG0YbSfdG-TGco&callback=initMap"></script>
 
 <script src="{{ asset('js/vehicle.js') }}"></script>
 @endsection
@@ -106,7 +107,7 @@
       </form>
     </div>
     <div class="col-md-4">
-      
+      <div id="map"></div>
     </div>
   </div>
   
