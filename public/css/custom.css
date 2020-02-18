@@ -1,0 +1,189 @@
+.wrapper {
+    display: flex;
+    /* width: 100%; */
+    align-items: stretch;
+    width: 1400px;
+    margin: auto;
+    background-color: transparent;    
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 30px;
+    background-color: #3172fb;
+    z-index: 2;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    padding: 25px;
+}
+#content {
+    flex: 1;
+    padding-top: 30px;
+}
+#contentWrapper {
+    flex: 1;
+    min-height: 700px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+    padding: 30px 30px 30px 70px;
+    margin-left: -70px;
+    box-shadow: 2px 0px 2px 2px #ccc;
+}
+.main-sidebar {
+    height: 100%;
+}
+.sidebar {
+    margin-top: 150px;
+}
+.nav-item {
+    padding: 5px 0px;
+    border-top: 1px solid #ffffff;
+}
+.nav-item:last-child {
+    border-bottom: 1px solid #ffffff;
+}
+.siderbar-footer {
+    margin-top: 190px;
+}
+.sider-footer {
+    color: #ffffff;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+}
+.sider-footer span {
+    color: #f9ff29;
+    font-size: 12px;
+}
+.header-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.header-label {
+    background-color: #f9ff29;
+    color: #000;
+    border-radius: 30px;
+    padding: 12px 70px 12px 40px;
+    margin-right: -30px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: bold;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.btn-vehicle {
+    background-color: #f9ff29;
+    border-radius: 30px;
+    padding: 6px 60px 6px 60px;
+    color: #000;
+    border: unset;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: bold;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+.text-label-1 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: bold;
+}
+.input-vehicle {
+    border: 2px solid #3172fb;
+    border-radius: 25px;
+}
+.select-list {
+    position: relative;
+    background: #3172fb;
+    border-radius: 30px;
+    border: 2px solid #3172fb;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+.select-list select {
+    border: none;
+    padding: 6px 55px 6px 15px;
+    margin: 0;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.5;
+    background: #fff;
+    -webkit-appearance: none; /* remove the strong OSX influence from Webkit */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Since we removed the default focus styles, we have to add our own */
+.select-list select:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+/* Select arrow styling */
+.select-list-icon {
+    display: flex;
+    color: #ffffff;
+    background-color: #3172fb;
+    border-radius: 0 30px 30px 0;
+    pointer-events: none;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.select-list-icon i {
+    margin-top: 6px;
+    margin-left: 8px;
+}
+.select-list-icon:before {
+    content: '';
+    width: 16px;
+    height: 100%;
+    background: #FFF;
+    border-radius: 0 30px 30px 0;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #3172fb;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+    background: #3172fb;    
+}
+
+input[type="radio"]:checked {
+  border-color:#3172fb;
+}
+
+#datepicker {
+    border-radius: 30px;
+    border: 2px solid #3172fb;
+}
+.btn-outline-secondary {
+    border: none !important;
+}
+.btn-outline-secondary i {
+    color: #3172fb;
+}
